@@ -5,7 +5,7 @@ var numbersArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
 numbersArray.forEach(function (item, index) {
   cubeWrapper.innerHTML += '<li data-item=' + item + '>' + item + '</li>';
 });
-shuffleArray = function () {
+shuffle = function () {
   console.log('helloshuffleArrayshuffleArrayshuffleArray!');
   var index = 0;
   numbersArray = numbersArray.sort(function () {
@@ -20,7 +20,7 @@ shuffleArray = function () {
     ++index;
   }
 };
-sortArray = function () {
+sorting = function () {
   var index = 0;
   numbersArray = numbersArray.sort(function (a, b) {
     return a - b;
