@@ -1,7 +1,6 @@
 console.log('hello!');
-var cubeNumber = ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
-  shuffleNodes = document.getElementById('cube'),
-  appendCubeElement;
+var cubeNumber = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var shuffleNodes = document.getElementById('cube');
 cubeNumber.forEach(function (item, index) {
   shuffleNodes.innerHTML += '<li data-item=' + item + '>' + item + '</li>';
 });
@@ -21,6 +20,7 @@ shuffle = function () {
   }
 };
 sorting = function () {
+  console.log('sorting==>sorting==>sorting!');
   var index = 0;
   cubeNumber = cubeNumber.sort(function (a, b) {
     return a - b;
